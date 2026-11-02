@@ -1,28 +1,13 @@
-# Maven
-target/
-.metadata/
-
-# Eclipse / STS
-.settings/
-.project
-.classpath
-.factorypath
-
-# IntelliJ
-.idea/
-*.iml
-
-# Logs
-*.log
-
-# Environment variables and secrets
 .env
 .env.*
 !.env.example
-
-# Uploaded files
+target/
+node_modules/
+dist/
 uploads/
-
-# OS files
-.DS_Store
-Thumbs.db
+*.log
+.idea/
+.vscode/
+.classpath
+.project
+.settings/

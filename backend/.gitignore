@@ -1,0 +1,28 @@
+# Maven
+target/
+.metadata/
+
+# Eclipse / STS
+.settings/
+.project
+.classpath
+.factorypath
+
+# IntelliJ
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Uploaded files
+uploads/
+
+# OS files
+.DS_Store
+Thumbs.db
