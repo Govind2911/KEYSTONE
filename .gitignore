@@ -11,3 +11,4 @@ uploads/
 .classpath
 .project
 .settings/
+build/
