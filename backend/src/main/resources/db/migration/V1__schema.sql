@@ -109,12 +109,6 @@ create table work_order_status_history (
     index ix_history_wo (work_order_id, changed_at)
 );
 
--- The audit trail is append-only: the database itself refuses edits and deletes.
-create trigger trg_history_no_update before update on work_order_status_history
-    for each row signal sqlstate '45000' set message_text = 'work_order_status_history is append-only';
-create trigger trg_history_no_delete before delete on work_order_status_history
-    for each row signal sqlstate '45000' set message_text = 'work_order_status_history is append-only';
-
 create table part_usages (
     id            bigint         not null auto_increment primary key,
     work_order_id bigint         not null,
